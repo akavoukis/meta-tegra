@@ -21,7 +21,7 @@ IMAGE_UBOOT ?= "${@'' if d.getVar('PREFERRED_PROVIDER_virtual/bootloader').start
 
 TEGRA_AUDIO_DEVICE ?= "tegrahda"
 
-SERIAL_CONSOLE = "115200 ttyS0"
+SERIAL_CONSOLES = "115200;ttyS0"
 
 KERNEL_MODULE_AUTOLOAD = "nvgpu tegra-udrm"
 KERNEL_MODULE_PROBECONF = "tegra-udrm"
